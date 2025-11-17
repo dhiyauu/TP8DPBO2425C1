@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Schedule</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../schedules.php">Schedules</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <h2>Add Schedule</h2>
+
+    <form method="POST">
+
+        <label>Lecturer:</label>
+        <select name="lecturer_id" class="form-control" required>
+            DATA_LECTURER_OPTIONS
+        </select><br>
+
+        <label>Day:</label>
+        <input type="text" name="day" class="form-control" required><br>
+
+        <label>Start Time:</label>
+        <input type="time" name="time_start" class="form-control" required><br>
+
+        <label>End Time:</label>
+        <input type="time" name="time_end" class="form-control" required><br>
+
+        <button name="submit" class="btn btn-success">Submit</button>
+        <a href="../schedules.php" class="btn btn-secondary">Cancel</a>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">Education Campus</a>
+  </div>
+</nav>
+
+<div class="container py-5">
+
+    <div class="row text-center">
+
+    <h1 class="text-center mb-4">Welcome to Education Campus System</h1>
+
+        <!-- DEPARTMENTS -->
+        <div class="col-md-4 mb-4">
+            <h4>Departments</h4>
+            <table class="table table-sm table-bordered">
+                <tr>
+                    <th>Dept</th>
+                    <th>Location</th>
+                </tr>
+
+                DATA_DEPARTMENTS
+
+            </table>
+            <a href="departments.php" class="btn btn-outline-success btn-sm w-100">View All</a>
+        </div>
+
+        <!-- LECTURERS -->
+        <div class="col-md-4 mb-4">
+            <h4>Lecturers</h4>
+            <table class="table table-sm table-bordered">
+                <tr>
+                    <th>Name</th>
+                    <th>NIDN</th>
+                </tr>
+
+                DATA_LECTURERS
+
+            </table>
+            <a href="lecturers.php" class="btn btn-outline-primary btn-sm w-100">View All</a>
+        </div>
+
+        <!-- SCHEDULES -->
+        <div class="col-md-4 mb-4">
+            <h4>Schedules</h4>
+            <table class="table table-sm table-bordered">
+                <tr>
+                    <th>Lecturer</th>
+                    <th>Day</th>
+                </tr>
+
+                DATA_SCHEDULES
+
+            </table>
+            <a href="schedules.php" class="btn btn-outline-warning btn-sm w-100">View All</a>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

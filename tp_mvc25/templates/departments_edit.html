@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Department</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../departments.php">Departments</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <h2>Edit Department</h2>
+
+    <form method="POST">
+
+        <input type="hidden" name="id" value="DATA_ID">
+
+        <label>Department Name:</label>
+        <input type="text" name="name" class="form-control" value="DATA_NAME" required><br>
+
+        <label>Location:</label>
+        <input type="text" name="location" class="form-control" value="DATA_LOCATION" required><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" class="form-control" value="DATA_EMAIL" required><br>
+
+        <button name="submit" class="btn btn-success">Update</button>
+        <a href="../departments.php" class="btn btn-secondary">Cancel</a>
+
+    </form>
+
+</div>
+
+</body>
+</html>
